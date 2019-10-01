@@ -1,9 +1,25 @@
 // Here your functions Victor
 let suit = ["club","diamond","spade","heart"];
 var cardSortDet = [];
-let cardNumber="0";
+cardtimes=0;
 
-function getColor() {
+cardTimes = document.querySelector("#row").innerHTML.value
+
+
+const cards = () => {  
+  for (let i=0; i < cardtimes; i++) {
+      let colorC = getcolor() ;
+      let suitC = getSuites() ;
+      let cardC = getCard() ;
+
+      document.querySelector("#cards").innerHTML= `${colorC} ${suitC} ${csuitC}` ;
+
+  }
+
+
+}
+
+const getColor = () => {
     let colorCardNumber = Math.floor(Math.random() * 2) + 1;
     let colorCard;
      switch(colorCardNumber) {
