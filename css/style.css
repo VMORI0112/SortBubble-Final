@@ -1,6 +1,9 @@
 body {
     background-color: #eeeeee!important;
 }
+.cards {
+    display: inline-block;
+}
 .card {
     position: relative;
     width: 60px;
