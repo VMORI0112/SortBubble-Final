@@ -17,7 +17,7 @@ function howManyCards() {
     let random = Math.floor(Math.random() * suit.length);
     let randomCard = Math.floor(Math.random() * 14) +1;
 
-    document.body.querySelector('#cards').innerHTML += `<span>color: ${colorCard} || suit: ${suit[random]} || Cart Number: ${randomCard}</span>`;
+    document.body.querySelector('#cards').innerHTML += `<div class="PlayingCard">${colorCard} ${suit[random]} ${randomCard}</div>`;
   }
 }
 
