@@ -1,5 +1,5 @@
 // Here your functions Victor
-let suit = ["club","diamond","spade","heart"];
+let suit = ["Club","Diamond","Spade","Heart"];
 let cardArr = [];
 
 const howManyCards = () => {
@@ -19,7 +19,7 @@ const howManyCards = () => {
     let random = Math.floor(Math.random() * suit.length);
     let randomCard = Math.floor(Math.random() * 14) +1;
     cardArr.push(randomCard);
-    document.body.querySelector('#cards').innerHTML += `<div class="PlayingCard mt-3">${colorCard} ${suit[random]} ${randomCard}</div>`;
+    document.body.querySelector('#cards').innerHTML += `<div class="PlayingCard mt-3"><span class="topLeft${suit[random]} ${colorCard}"></span>  ${randomCard} <span class="bottomRight${suit[random]} ${colorCard}"></span></div>`;
   }
   return cardArr;
 }
