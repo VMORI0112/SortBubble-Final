@@ -1,5 +1,13 @@
 body {
-    background-color: #eeeeee!important;
+    background-color: green!important;
+   color: white!important;
+}
+.img {
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    z-index: -1;
+    transform: rotate(35deg);
 }
 .firstCards {
    display: inline;
@@ -17,6 +25,8 @@ body {
     position: relative;
     width: 80px;
     background: white;
+    color: black;
+    font-weight: bold;
     margin: 0px 5px;
     height: 100px;
     font-size: 10px;

@@ -1,4 +1,3 @@
-// Here your functions Victor
 let suit = ["Club","Diamond","Spade","Heart"];
 let cardArr = [];
 let log = [];
@@ -31,9 +30,6 @@ const howManyCards = () => {
 
 
 function sortBubble() {
-  // document.body.querySelector('#cardsSortDetail').innerHTML = '';
-  // document.body.querySelector('#detail').innerHTML = '';
-
   log = [];
 
   var swapped;
